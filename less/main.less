@@ -1,0 +1,217 @@
+@import './normalize.less';
+
+@import './adapter.less';
+
+@import './global.less';
+
+body {
+	background-color: #f5f5f5;
+}
+
+.viewport {
+	width: 100%;
+	max-width: 1080 / 54rem;
+	margin: 0 auto;
+	overflow: hidden;
+
+	// 头部
+	.top {
+		width: 1080 / 54rem;
+		height: 135 / 54rem;
+		line-height: 135 / 54rem;
+		text-align: center;
+		padding: 0 38 / 54rem;
+		background-color: #CD3A31;
+
+		.lt {
+			float: left;
+			font-size: 56 / 54rem;
+			color: #fff;
+
+		}
+
+		.font {
+			display: block;
+			font-size: 56 / 54rem;
+			color: #fff;
+		}
+	}
+	
+	// 筛选列表
+	.list {
+		height: 50%;
+		background-color: #f5f5f5;
+	}
+
+	// 筛选
+	.screen {
+		position: relative;
+		width: 1080 / 54rem;
+		height: 108 / 54rem;
+		line-height: 108 / 54rem;
+		background-color: #fff;
+		font-size: 40 / 54rem;
+		// display: flex;
+		// justify-content: space-between;
+		
+		a {
+			color: #878787;
+			margin: 0 170 / 54rem 0 200 / 54rem;
+		}
+
+		.country {
+			display: inline-block;
+			margin: ;
+		}
+
+		.current {
+			color: #CD3A31;
+		}
+		.business {
+			display: inline-block;
+			// flex: 1;
+		}
+
+		.citymenu {
+			position: absolute;
+			// top: 0;
+			// left: 0;
+			width: 1080 / 54rem;
+			height: 536 / 54rem;
+			background-color: #fff;
+			// background-color: #F5F5F5;
+			box-sizing: border-box;
+			z-index: 99;
+
+			 ul {
+
+			 	li {			 		
+				// display: block;
+					height: 107 / 54rem;
+					color: #878787;
+					font-size: 40 / 54rem;
+					border-bottom: 1px solid #EEEEEE;
+					padding-left: 45 / 54rem;
+					box-sizing: border-box;
+			 	}
+			}
+
+			.cityshow {
+			 	background-color: #F5F5F5;
+			}
+
+		}
+	}
+	
+	// 数据统计
+	.number {
+		font-size: 40 / 54rem;
+		height: 108 / 54rem;
+		line-height:  108 / 54rem;
+
+		p {
+			color: #A9A9A9;
+			margin-left: 30 / 54rem;
+
+			span {
+				color: #D71F18;
+			}
+		}
+	}
+
+	// 公司详情信息
+
+		.content {
+			width: 1033 / 54rem;
+			padding: 0 24 / 54rem;
+			background-color: #fff;
+
+			.item {
+				position: relative;
+				width: 1033 /54rem;
+				border-bottom: 1px solid #ccc;
+				padding-top: 10 / 54rem;
+				box-sizing: border-box;
+				// &:nth-child(2) {
+				// border-top: 1px solid #ccc;
+				// }
+
+				&:last-child {
+				border: none;
+				}
+				// 公司logo部分
+		 		.co {
+		 			display: inline-block;
+		 			width: 190 / 54rem;
+		 			height: 190 / 54rem;
+		 			padding: 20 / 54rem 0 20 / 54rem;
+					float: left;
+		 		}
+				//文字信息部分
+		 		.meta {
+					margin-left:200 / 54rem;
+		 			padding: 20 / 54rem 0 20 / 54rem;
+					.logolink {
+						// display: block;
+						font-size: 40 / 54rem;
+						color: #656565;
+					}
+					
+					p {
+						font-size: 40 / 54rem;
+						color: #878787;
+						margin-top: 14 / 54rem;
+					}
+
+					// .msglink {
+					// 	font-size: 32 / 54rem;
+					// 	color: #2B83CD;
+					// 	margin-top: 14 / 54rem;
+					// }
+					.active {
+						color: #FF7167;
+					}
+
+					.cancellation {
+						color: #878787;
+					}
+		 		}
+					
+			// 分数显示部分
+			 	.score {
+			 		position: absolute;
+			 		right: 0;
+			 		top: 70 / 54rem;
+					width: 265 / 54rem;
+					height: 79 / 54rem;
+					line-height: 79 / 54rem;
+					border-radius: 12 / 54rem;
+					padding-left: 20 / 54rem;
+					box-sizing: border-box;
+					font-size: 36/ 54rem;
+			 	}
+
+			 	.scoreshow {	
+			 		color: #FF7167;
+					border: 1px solid #CD3A31;
+			 		background-color: #FFF1F0;
+			 	}
+
+			 	.scorehide {	
+			 		color: #878787;
+					border: 1px solid #666666;
+			 		background-color: #F5F5F5;
+
+			 	}
+
+		 	}
+		}
+
+		// 底部加载提示文字
+		.load {
+    		text-align: center;
+    		padding: 30 / 54rem 0 38 / 54rem;
+    		color: #878787;
+    		font-size: 42 / 54rem;
+		}
+}
