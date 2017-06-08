@@ -14,10 +14,10 @@
 		<div class="top">
 			<a href="javascript:;" class="icon-lt lt"></a>
 			<span class="font">企业列表</span>
-			<a href="javascript:;" class="spot icon-menu"></a>
+			<a href="javascript:;" class="spot icon-menu" id="spot"></a>
 		</div>
 		<!-- 筛选列表单页面 -->
-		<div class="list">
+		<div class="list" id="list">
 			<div class="list-wrap">
 				<div class="listitem">
 					<!-- 年限 -->
@@ -86,7 +86,7 @@
 			<a href="javascript:;" class="country icon-up" id="up">全国</a>
 			<a href="javascript:;" class="business icon-down" id="down">所有行业</a>
             <!-- 城市筛选 -->
-			<div class="citymenu" id="citymenu">
+			<div class="citymenu cityflex" id="citymenu">
 				<ul>
 					<li class="cityshow">全国</li>
 					<li>北京</li>
@@ -105,7 +105,6 @@
                     <dd>北京</dd>
                     <dd>北京</dd>
 					<dd>北京</dd>
-					<dt></dt>
 					<dt></dt>
 					<dt></dt>
 					<dt></dt>
@@ -219,9 +218,14 @@
 
 	$('#up').on('click',function(){
 
-		this.addClass('current');
+		$(this).toggleClass('current');
 
+		$('#citymenu').toggle();
 
+	})
+
+	$('#spot').on('click',function(){
+		$('#list').toggle();
 	})
 
 </script>
