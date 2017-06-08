@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet/less" href="./less/main.less">
+	<link rel="stylesheet/less" href="./less/company.less">
 	<!-- <link rel="stylesheet" href="./less/main.css"> -->
 	<script src="./libs/less.min.js"></script>
 </head>
@@ -14,22 +14,76 @@
 		<div class="top">
 			<a href="javascript:;" class="lt">&lt;</a>
 			<span class="font">企业列表</span>
-			<a href="javascript:;"></a>
+			<a href="javascript:;" class="spot icon-menu"></a>
 		</div>
-		<!-- 筛选列表 -->
+		<!-- 筛选列表单页面 -->
 		<div class="list">
-			<div class="year"></div>
-			<div class="capital"></div>
-			<div class="status"></div>
-			<!-- 融资信息 -->
-			<div class="calculate"></div>  
-			<!-- 上市 -->
-			<div class="appear"></div>
+			<div class="listitem">
+			<!-- 年限 -->
+				<div class="title">成立年限</div>
+				<div class="lists">
+					<a href="javascript:;" class="bordershow">不限</a>
+					<a href="javascript:;">1年内</a>
+					<a href="javascript:;">1到3年</a>
+					<a href="javascript:;">3到5年</a>
+					<a href="javascript:;">5到10年</a>
+					<a href="javascript:;">10年以上</a>
+				</div>
+			</div>
+			<div class="listitem">
+			<!-- 注册资本 -->
+				<div class="title">注册资本</div>
+				<div class="lists">
+					<a href="javascript:;" class="bordershow">不限</a>
+					<a href="javascript:;">100万以内</a>
+					<a href="javascript:;">100-200万</a>
+					<a href="javascript:;">200-500万</a>
+					<a href="javascript:;">500-1000万</a>
+					<a href="javascript:;">1000万以上</a>
+				</div>
+			</div>
+			<div class="listitem">
+			<!-- 登记状态 -->
+				<div class="title">登记状态</div>
+				<div class="lists">
+					<a href="javascript:;" class="bordershow">不限</a>
+					<a href="javascript:;">在业</a>
+					<a href="javascript:;">存续</a>
+					<a href="javascript:;">筹建</a>
+					<a href="javascript:;">清算</a>
+					<a href="javascript:;">迁入</a>
+					<a href="javascript:;">迁出</a>
+					<a href="javascript:;">停业</a>
+					<a href="javascript:;">撤销</a>
+					<a href="javascript:;">吊销</a>
+					<a href="javascript:;">注销</a>
+				</div>
+			</div>
+			<div class="listitem">
+			
+				<div class="title">融资信息</div>
+				<div class="lists">
+					<a href="javascript:;" class="bordershow">不限</a>
+					<a href="javascript:;">有融资</a>
+					<a href="javascript:;">无融资</a>
+			</div>
+
+			<!-- 注册资本 -->
+<!-- 			<div class="capital">
+				<div class="title">注册资本</div>
+
+			</div> -->
+<!-- 			<div class="status"></div>
+			 融资信息 -->
+	<!-- 		<div class="calculate"></div>  
+			上市
+			<div class="appear"></div> --> 
 		</div>
 		<!-- 筛选 -->
 		<div class="screen">
 			<a href="javascript:;" class="country current">全国</a>
 			<a href="javascript:;" class="business">所有行业</a>
+            <!-- 城市筛选 -->
 			<div class="citymenu">
 				<ul>
 					<li class="cityshow">全国</li>
@@ -37,15 +91,23 @@
 					<li>上海</li>
 					<li>广州</li>
 					<li>深圳</li>
+                    <!-- <li>上海</li>
+                    <li>广州</li>
+                    <li>深圳</li>
+                    <li>上海</li>
+                    <li>广州</li>
+                    <li>深圳</li> -->
 				</ul>
-<!-- 				<dl>
+				<dl>
+					<dt class="bordershow">全国</dt>
+                    <dd>北京</dd>
+                    <dd>北京</dd>
+					<dd>北京</dd>
 					<dt></dt>
-					<dd></dd>
 					<dt></dt>
 					<dt></dt>
 					<dt></dt>
-					<dt></dt>
-				</dl> -->
+				</dl>
 			</div>
 		</div>
 		<!-- 数据统计 -->

@@ -1,0 +1,146 @@
+@import './normalize.less';
+
+@import './adapter.less';
+
+@import './font.less';
+
+@import './global.less';
+
+body {	
+	background-color: #f5f5f5;
+}
+
+.viewport {
+	width: 100%;
+	max-width: 1080 / 54rem;
+	margin: 0 auto;
+	overflow: hidden;
+	// 头部
+	.top {
+		width: 1080 / 54rem;
+		height: 286 / 54rem;
+		padding: 0 40 / 54rem;
+		// 我刚加的
+		box-sizing: border-box;
+		background-color: #CD3A31;
+		// background-size: cover;
+		position: relative;
+
+
+			.topcon {
+				padding-top: 34 / 54rem;
+				text-align: center;
+
+				.icon-lt{
+					font-size: 56 / 54rem;
+					float: left;
+					color: #fff;
+					position: absolute;
+				}
+
+				.font {
+					display: inline;
+					font-size: 56 / 54rem;
+					color: #fff;
+
+				}
+			}
+
+
+			input {
+				display: block;
+				width: 998/54rem;
+				height: 108/54rem;
+				margin-top: 40 / 54rem;
+				border: none;
+				border-radius: 12 / 54rem;
+				box-sizing: border-box;
+				font-size: 40 / 54rem;
+				font-family: microsoft-yahei;
+				text-indent: 90 / 54rem;
+				color: #000;
+				-webkit-input-placeholder{color: #000;opacity:1;}; 
+			}
+
+			.glass {
+				position: absolute;
+				left: 50 / 54rem;
+				top: 166 / 54rem;
+				display: inline-block;
+				width: 50 / 54rem;
+				height: 50 / 54rem;
+				background: url('../images/search.fw.png') no-repeat;
+				background-size: 50 / 54rem 50 / 54rem;
+			}
+	}
+
+		// 搜索记录
+		.content {
+			width: 1080 / 54rem;
+	    	background-color: #fff;
+	    	margin-top: 30 / 54rem;
+			.record {
+
+				width: 1033 / 54rem;
+				margin: 0 auto;
+
+				.rectitle{
+						height: 110 / 54rem;
+						line-height: 110 / 54rem;
+						box-sizing: border-box;
+						border-bottom: 1px solid #FFA7A4;
+
+						span {
+							float: left;
+							font-size: 44 / 54rem;
+							color: #434343;
+						}
+
+						a {
+							float: right;
+							color: #BBBBBB;
+							transform:translateY(60%);
+						}
+				}
+
+				.recmsg {
+					padding-bottom: 22 / 54rem;
+					a {
+						color: #878787;
+						display: inline-block;
+						padding: 26 / 54rem 36 /54rem;
+						margin: 22 / 54rem 20 / 54rem 0 0 ;
+						background-color: #F5F5F5;
+						font-size: 36 / 54rem;
+						border-radius: 16 / 54rem;
+
+					}
+				}
+			}
+		}
+		
+		 // 底部tab
+		.tab {
+			width: 880 / 54rem;
+			height: 127 / 54rem;
+			border-top: 1px solid #CD3A31;
+			position: fixed;
+			bottom: 0;
+			padding: 0 100 / 54rem 0 100 / 54rem;
+			display: flex;
+			justify-content: space-between;
+			background-color: #fff;
+
+			a {
+				// flex:1;
+				padding-top: 20 / 54rem;
+				color: #A9A9A9;
+				span {
+					font-size: 28 / 54rem;
+					display: block;
+					margin-top: 4 / 54rem;
+				}
+			}
+
+		}
+}
