@@ -86,7 +86,7 @@
 			<a href="javascript:;" class="country icon-up" id="up">全国</a>
 			<a href="javascript:;" class="business icon-down" id="down">所有行业</a>
             <!-- 城市筛选 -->
-			<div class="citymenu">
+			<div class="citymenu" id="citymenu">
 				<ul>
 					<li class="cityshow">全国</li>
 					<li>北京</li>
@@ -207,10 +207,22 @@
 		<div class="load">拼命加载中...</div>
 	</div>
 </body>
-<script src="./libs/zepto.min.js"></script>
+<script src="./libs/jquery.min.js"></script>
 <script>
-	
 
+	// $('#up').on('click',function(){
+
+	// 		$('#citymenu').css('displack':'block').addClass('current');
+	// })
+
+	// 		$('#citymenu'). toggleClass('current');
+
+	$('#up').on('click',function(){
+
+		this.addClass('current');
+
+
+	})
 
 </script>
 </html>
