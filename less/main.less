@@ -2,10 +2,13 @@
 
 @import './adapter.less';
 
+@import './font.less';
+
 @import './global.less';
 
 body {
-	background-color: #f5f5f5;
+	margin-bottom: 127 / 54rem;
+	background-color: #F5F5F5;
 }
 
 .viewport {
@@ -16,202 +19,288 @@ body {
 
 	// 头部
 	.top {
-		width: 1080 / 54rem;
-		height: 135 / 54rem;
-		line-height: 135 / 54rem;
-		text-align: center;
-		padding: 0 38 / 54rem;
-		background-color: #CD3A31;
-
-		.lt {
-			float: left;
-			font-size: 56 / 54rem;
-			color: #fff;
-
+		width: 1080/54rem;
+		height: 480/54rem;
+		background: url('../images/bg.png') no-repeat;
+		background-size: 1080 / 54rem auto;
+		.toplogo {
+			width: 390/54rem;
+			margin:0 345/54rem;
+			padding-top: 46 / 54rem;
 		}
-
-		.font {
-			display: block;
-			font-size: 56 / 54rem;
-			color: #fff;
-		}
-	}
-	
-	// 筛选列表
-	.list {
-		height: 50%;
-		background-color: #f5f5f5;
-	}
-
-	// 筛选
-	.screen {
-		position: relative;
-		width: 1080 / 54rem;
-		height: 108 / 54rem;
-		line-height: 108 / 54rem;
-		background-color: #fff;
-		font-size: 40 / 54rem;
-		// display: flex;
-		// justify-content: space-between;
 		
-		a {
-			color: #878787;
-			margin: 0 170 / 54rem 0 200 / 54rem;
-		}
+		.search {	
+			position: relative;
+			width: 100%;
+			padding: 0 39 / 54rem;
+			margin-top: 44 /54rem;
 
-		.country {
-			display: inline-block;
-			margin: ;
-		}
-
-		.current {
-			color: #CD3A31;
-		}
-		.business {
-			display: inline-block;
-			// flex: 1;
-		}
-
-		.citymenu {
-			position: absolute;
-			// top: 0;
-			// left: 0;
-			width: 1080 / 54rem;
-			height: 536 / 54rem;
-			background-color: #fff;
-			// background-color: #F5F5F5;
-			box-sizing: border-box;
-			z-index: 99;
-
-			 ul {
-
-			 	li {			 		
-				// display: block;
-					height: 107 / 54rem;
-					color: #878787;
-					font-size: 40 / 54rem;
-					border-bottom: 1px solid #EEEEEE;
-					padding-left: 45 / 54rem;
-					box-sizing: border-box;
-			 	}
+			input {
+				display: block;
+				width: 998/54rem;
+				height: 108/54rem;
+				border: none;
+				border-radius: 16rem / 54;
+				box-sizing: border-box;
+				font-size: 40 / 54rem;
+				font-family: microsoft-yahei;
+				text-indent: 130 / 54rem;
+				color: #000;
+				-webkit-input-placeholder{color: #000;opacity:1;}; 
 			}
 
-			.cityshow {
-			 	background-color: #F5F5F5;
+			.glass {
+				position: absolute;
+				left: 94 / 54rem;
+				top: 30 / 54rem;
+				display: inline-block;
+				width: 50 / 54rem;
+				height: 50 / 54rem;
+				background: url('../images/search.fw.png') no-repeat;
+				background-size: 50 / 54rem 50 / 54rem;
+			}
+		}
+
+		.menu {
+			// display: flex;
+			width: 938 / 54rem;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+			margin-top: 28 / 54rem;
+			a {
+				display: inline-block;
+
+				img {
+					height: 59 / 54rem; 
+				    margin: 0 auto;
+				}
+				span {
+					display: block;
+					color: #fff;
+					font-size: 32 / 54rem;
+					margin-top: 10 / 54rem;
+				}
 			}
 
 		}
 	}
-	
-	// 数据统计
-	.number {
-		font-size: 40 / 54rem;
-		height: 108 / 54rem;
-		line-height:  108 / 54rem;
 
-		p {
-			color: #A9A9A9;
-			margin-left: 30 / 54rem;
+	//上半部分商品信息
+	.topmsg {
+        padding: 0 30rem / 54;
+		background-color: #fff;
+
+	 	.title {
+			position: relative;
+			height: 110 / 54rem;
+			line-height: 110 / 54rem;
 
 			span {
-				color: #D71F18;
+				font-size: 40 / 54rem;
 			}
-		}
-	}
+			.more {
+				position: absolute;
+				right: 0;
+				top: 0;
+				font-size: 32 / 54rem;
+				color: #BBBBBB;
+			}
+	 	}
 
-	// 公司详情信息
-
-		.content {
-			width: 1033 / 54rem;
-			padding: 0 24 / 54rem;
-			background-color: #fff;
-
+	 	.topcontent {
+			
 			.item {
-				position: relative;
 				width: 1033 /54rem;
-				border-bottom: 1px solid #ccc;
-				padding-top: 10 / 54rem;
-				box-sizing: border-box;
-				// &:nth-child(2) {
-				// border-top: 1px solid #ccc;
-				// }
-
-				&:last-child {
-				border: none;
+				border-top: 1px solid #FFA7A4;
+				padding-top: 20 / 54rem;
+				// padding-bottom: 20 / 54rem;
+				&:nth-child(2) {
+				border-top: 1px solid #ccc;
 				}
-				// 公司logo部分
+
+				&:nth-child(3) {
+				border-top: 1px solid #ccc;
+				}
+
 		 		.co {
 		 			display: inline-block;
 		 			width: 190 / 54rem;
 		 			height: 190 / 54rem;
-		 			padding: 20 / 54rem 0 20 / 54rem;
 					float: left;
 		 		}
-				//文字信息部分
+
 		 		.meta {
 					margin-left:200 / 54rem;
-		 			padding: 20 / 54rem 0 20 / 54rem;
+					
+					padding-bottom: 20 / 54rem;
 					.logolink {
 						// display: block;
-						font-size: 40 / 54rem;
+						font-size: 36 / 54rem;
 						color: #656565;
 					}
 					
 					p {
-						font-size: 40 / 54rem;
+						font-size: 32 / 54rem;
 						color: #878787;
 						margin-top: 14 / 54rem;
 					}
 
-					// .msglink {
-					// 	font-size: 32 / 54rem;
-					// 	color: #2B83CD;
-					// 	margin-top: 14 / 54rem;
-					// }
-					.active {
-						color: #FF7167;
-					}
-
-					.cancellation {
-						color: #878787;
+					.msglink {
+						font-size: 32 / 54rem;
+						color: #2B83CD;
+						margin-top: 14 / 54rem;
 					}
 		 		}
-					
-			// 分数显示部分
-			 	.score {
-			 		position: absolute;
-			 		right: 0;
-			 		top: 70 / 54rem;
-					width: 265 / 54rem;
-					height: 79 / 54rem;
-					line-height: 79 / 54rem;
-					border-radius: 12 / 54rem;
-					padding-left: 20 / 54rem;
-					box-sizing: border-box;
-					font-size: 36/ 54rem;
-			 	}
 
-			 	.scoreshow {	
-			 		color: #FF7167;
-					border: 1px solid #CD3A31;
-			 		background-color: #FFF1F0;
-			 	}
-
-			 	.scorehide {	
-			 		color: #878787;
-					border: 1px solid #666666;
-			 		background-color: #F5F5F5;
-
-			 	}
-
+		 		// .bgfont1 {
+					// display: block;
+					// width: 42 / 54rem;
+					// height: 52 / 54rem;
+					// background: url('../images/sprites.png') 0 238px no-repeat;
+		 		// }
 		 	}
+	 	}
+	 }
+ 	// 轮播
+	 .swipe {
+	 	margin-top: 24 /54rem;
+	 	margin-bottom: 26 /54rem;
+	 }
+
+ 	// 下半部分信息
+	.downmsg {
+        padding: 0 30rem / 54;
+		background-color: #fff;
+
+
+	 	.dtitle {
+				position: relative;
+				height: 110 / 54rem;
+				line-height: 110 / 54rem;
+
+			span {
+				font-size: 40 / 54rem;
+			}
+			.more {
+				position: absolute;
+				right: 0;
+				top: 0;
+				font-size: 32 / 54rem;
+				color: #BBBBBB;
+			}
+	 	}
+
+	 	.downcontent {
+			
+			.item {
+				width: 1033 /54rem;
+				border-top: 1px solid #FFA7A4;
+				padding-top: 20 / 54rem;
+				padding-bottom: 20 / 54rem;
+
+				&:nth-child(2) {
+				border-top: 1px solid #ccc;
+				}
+
+				&:nth-last-child(1) {
+				border-top: 1px solid #ccc;
+				}
+
+		 		.co {
+		 			display: inline-block;
+		 			width: 190 / 54rem;
+		 			height: 190 / 54rem;
+					float: left;
+		 			// img {
+		 			// 	height: 187 / 54rem;
+		 			// }
+		 		}
+
+		 		.meta {
+					margin-left:200 / 54rem;
+
+					.logolink {
+						// display: block;
+						font-size: 36 / 54rem;
+						color: #656565;
+					}
+					
+					p {
+						font-size: 32 / 54rem;
+						color: #878787;
+						margin-top: 14 / 54rem;
+					}
+
+					.msglink {
+						font-size: 32 / 54rem;
+						color: #2B83CD;
+						margin-top: 14 / 54rem;
+					}
+		 		}
+
+		 		.bgfont1 {
+
+		 		}
+		 	}
+	 	}
+	 }
+
+	 // 底部tab
+		.tab {
+			width: 880 / 54rem;
+			height: 127 / 54rem;
+			border-top: 1px solid #CD3A31;
+			position: fixed;
+			bottom: 0;
+			padding: 0 100 / 54rem 0 100 / 54rem;
+			display: flex;
+			justify-content: space-between;
+			background-color: #fff;
+
+			a {
+				// flex:1;
+				padding-top: 20 / 54rem;
+				color: #A9A9A9;
+				span {
+					font-size: 28 / 54rem;
+					display: block;
+					margin-top: 4 / 54rem;
+				}
+			}
+
 		}
 
-		// 底部加载提示文字
-		.load {
-    		text-align: center;
-    		padding: 30 / 54rem 0 38 / 54rem;
-    		color: #878787;
-    		font-size: 42 / 54rem;
-		}
+ 	.topcontent, .downcontent {
+
+ 		.item {
+ 			position: relative;
+
+ 			&:nth-child(-n+3):after {
+ 				content: '';
+ 				position: absolute;
+ 				top: 20rem / 54;
+ 				right: 30rem / 54;
+
+ 				display: block;
+ 				width: 70rem / 54;
+ 				height: 70rem / 54;
+ 				background-size: auto 100%;
+ 				background-repeat: no-repeat;
+ 				background-position: center;
+ 			}
+
+ 			&:nth-child(1):after {
+ 				background-images: url(../images/fire_1.png);
+ 			}
+
+  			&:nth-child(2):after {
+ 				background-images: url(../images/fire_2.png);
+ 			}
+
+ 			&:nth-child(3):after {
+ 				background-images: url(../images/fire_3.png);
+ 			}
+ 		}
+ 	}
 }

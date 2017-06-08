@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>砖石征信</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <link rel="stylesheet" href="../less/main.css"> -->
+	<link rel="stylesheet/less" href="../less/main.less">
+	<script src="../libs/less.min.js"></script>
+	<style>
+		.swipe {
+			overflow: hidden;
+			visibility: hidden;
+			position: relative;
+			
+		}
+		.swipe-wrap {
+			overflow: hidden;
+			position: relative;
+		}
+		.swipe-wrap > li {
+			float: left;
+			width: 100%;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="viewport">	
+		<!-- 头部 -->
+		<div class="top">
+			<div class="toplogo">
+				<img src="../images/logo.png" alt="">
+			</div>
+			<div class="search">
+				<span class="glass"></span>	
+				<input type="text" placeholder="请输入企业名、人名、地址、产品名等关键词">
+			</div>
+			<div class="menu">
+				<a href="javascript:;">
+					<img src="../images/top-number.fw.png" alt="">
+					<span>指数</span>	
+				</a>
+				<a href="javascript:;">
+					<img src="../images/top-gift.fw.png" alt="">
+					<span>礼物</span>
+				</a>
+				<a href="javascript:;">
+					<img src="../images/top-qiandao.fw.png" alt="">
+					<span>签到</span>
+				</a>
+				<a href="javascript:;" class="fix">
+					<img src="../images/top-msg.fw.png" alt="">
+					<span>消息</span>
+				</a>
+			</div>
+		</div>
+		<!-- 上半部分商品信息 -->
+		<div class="topmsg">
+			<div class="title">
+				<span>最活跃企业TOP3</span>
+				<a href="javascript:;" class="more">查看更多 &gt&gt</a>
+			</div>
+			<div class="topcontent">
+				<div class="item">
+					<a href="javascript:;" class="co">
+						<img src="../images/chuizi.fw.png" alt="">
+					</a>
+					<div class="meta">
+						<a href="javascript:;" class="logolink">锤子科技</a>
+						<p>法人代表：罗永浩</p>
+						<p>注册资本：2567.272万元</p>
+						<a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a>
+					</div>
+					<span class="bgfont1"></span>
+				</div>
+				<div class="item">
+					<a href="javascript:;" class="co">
+						<img src="../images/mi.fw.png" alt="">
+					</a>
+					<div class="meta">
+						<a href="javascript:;" class="logolink">锤子科技</a>
+						<p>法人代表：罗永浩</p>
+						<p>注册资本：2567.272万元</p>
+						<a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a>
+					</div>
+					<span class="bgfont1"></span>
+				</div>
+				<div class="item">
+					<a href="javascript:;" class="co">
+						<img src="../images/wanda.fw.png" alt="">
+					</a>
+					<div class="meta">
+						<a href="javascript:;" class="logolink">锤子科技</a>
+						<p>法人代表：罗永浩</p>
+						<p>注册资本：2567.272万元</p>
+						<a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a>
+					</div>
+					<span class="bgfont1"></span>
+				</div>
+			</div>
+		</div>
+		<!-- 中间轮播图 -->
+		<div id="slider" class="swipe">
+		  <ul class="swipe-wrap">
+			<li>
+				<a href="javascript:;">
+					<img src="../images/banner_1.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:;">
+					<img src="../images/banner_1.jpg" alt="">
+				</a>
+			</li>	
+			<li>
+				<a href="javascript:;">
+					<img src="../images/banner_1.jpg" alt="">
+				</a>
+			</li>
+		  </div>
+		<!-- 下半部分商品信息 -->
+		<div class="downmsg">			
+			<div class="dtitle">
+				<span>最活跃企业TOP3</span>
+				<a href="javascript:;" class="more">查看更多 &gt&gt</a>
+			</div>
+			<div class="downcontent">
+				<div class="item">
+					<a href="javascript:;" class="co">
+						<img src="../images/chuizi.fw.png" alt="">
+					</a>
+					<div class="meta">
+						<a href="javascript:;" class="logolink">锤子科技</a>
+						<p>法人代表：罗永浩</p>
+						<p>注册资本：2567.272万元</p>
+						<a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a>
+					</div>
+					<span class="bgfont1"></span>
+				</div>
+				<div class="item">
+					<a href="javascript:;" class="co">
+						<img src="../images/mi.fw.png" alt="">
+					</a>
+					<div class="meta">
+						<a href="javascript:;" class="logolink">锤子科技</a>
+						<p>法人代表：罗永浩</p>
+						<p>注册资本：2567.272万元</p>
+						<a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a>
+					</div>
+					<span class="bgfont1"></span>
+				</div>
+				<div class="item">
+					<a href="javascript:;" class="co">
+						<img src="../images/wanda.fw.png" alt="">
+					</a>
+					<div class="meta">
+						<a href="javascript:;" class="logolink">锤子科技</a>
+						<p>法人代表：罗永浩</p>
+						<p>注册资本：2567.272万元</p>
+						<a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a>
+					</div>
+					<span class="bgfont1"></span>
+				</div>
+			</div>
+		</div>
+		<!-- 底部分类 -->
+		<div class="tab">
+			<a href="javascript:;" class="icon-home">
+				<span>首页</span>
+			</a>
+			<a href="../src/search.html" class="icon-search">
+				<span>搜索</span>
+			</a>
+			<a href="javascript:;" class="icon-heart">
+				<span>关注</span>
+			</a>
+			<a href="javascript:;" class="icon-people">
+				<span>我的</span>
+			</a>
+		</div>
+	</div>
+</body>
+<script src="../libs/swipe.js"></script>
+<script>
+	new Swipe(document.querySelector('#slider'), {
+	// auto: 3000,
+	// transitionEnd: function(index) {
+		// index++;
+		// document.querySelector('.cursor .active').classList.remove('active');
+
+		// document.querySelector('.cursor span:nth-child('+index+')').classList.add('active');
+	// }
+});
+</script>
+</html>
