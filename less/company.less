@@ -20,19 +20,17 @@ body {
 	// 头部
 	.top {
 		width: 1080 / 54rem;
-		height: 135 / 54rem;
-		line-height: 135 / 54rem;
+		// height: 135 / 54rem;
+		// line-height: 135 / 54rem;
 		text-align: center;
-		padding-left: 38 / 54rem;
-		padding-right: 38 / 54rem;
+		padding: 38 / 54rem;
 		background-color: #CD3A31;
 		box-sizing: border-box;
 
 		.lt {
-			float: left;
+	    	float: left;
 			font-size: 56 / 54rem;
 			color: #fff;
-
 		}
 
 		.font {
@@ -44,8 +42,6 @@ body {
 		.spot {
 	    	float: right;
 			font-size: 56 / 54rem;
-
-			// display: inline-block;
 			color: #fff;
 		}
 	}
@@ -61,6 +57,7 @@ body {
 		// 上下滚动条
 		overflow-y: auto;
 		z-index: 100;
+		display: none;
 
 		.title {
 			padding: 34 / 54rem 0 34 / 54rem 43 / 54rem;
@@ -76,13 +73,15 @@ body {
 
 			// 年限部分
 			.lists {
-				padding: 38 / 54rem 100 / 54rem 42 / 54rem;
+				padding: 38 / 54rem 54 / 54rem;
 				margin-bottom: 27 / 54rem;
 
 				a {
-					font-size: 42 / 54rem;
+					font-size: 40 / 54rem;
 					color: #878787;
 					display: inline-block;
+					margin: 0 30 / 54rem;
+					// line-height: 125 / 54rem;
 					// padding
 				}
 				
@@ -91,13 +90,34 @@ body {
 				}
 
 			}
-
+			
 		}
 
-		//注册资本
-		.capital {
+		.listsearch {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background-color: #fff;
+			padding-top: 37 / 54rem;
+		    padding-bottom: 46 / 54rem;
+				.listbtn {
+					display: block;
+					width: 316 / 54rem;
+					height: 88 / 54rem;
+					background-color: #FF8700;
+					font-size: 42 / 54rem;
+					color: #fff;
+					text-align: center;
+					vertical-align: middle;
+					margin: 0 auto;
+					border-radius: 14 / 54rem;
+					padding: 20 / 54rem 0;
+					box-sizing: border-box;
+				}
 
-		}
+			}
+
 	}
 
 	// 筛选
@@ -112,7 +132,7 @@ body {
 		font-size: 40 / 54rem;
 		// display: flex;
 		// justify-content: space-between;
-		display: none;
+
 		a {
 			color: #878787;
 			margin: 0 170 / 54rem 0 200 / 54rem;
@@ -125,7 +145,13 @@ body {
 
 		.current {
 			color: #CD3A31;
+
 		}
+		.icon-up:after, .icon-down:after {
+			// float: right;
+			// padding-left: 20 / 54rem;
+		}
+
 		.business {
 			display: inline-block;
 			// flex: 1;
@@ -140,7 +166,7 @@ body {
 			// background-color: #F5F5F5;
 			box-sizing: border-box;
 			z-index: 99;
-
+			display: none;
 			 ul {
 
 					flex: 1;
@@ -269,7 +295,7 @@ body {
 			 		position: absolute;
 			 		right: 0;
 			 		top: 70 / 54rem;
-					width: 265 / 54rem;
+					width: 278 / 54rem;
 					height: 79 / 54rem;
 					line-height: 79 / 54rem;
 					border-radius: 12 / 54rem;
