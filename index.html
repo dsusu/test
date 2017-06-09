@@ -2,233 +2,70 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>账户中心</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet/less" href="./less/company.less">
-	<!-- <link rel="stylesheet" href="./less/main.css"> -->
+	<!-- <link rel="stylesheet" href="./less/my.css"> -->
+	<link rel="stylesheet/less" href="./less/my.less">
 	<script src="./libs/less.min.js"></script>
 </head>
 <body>
-	<div class="viewport">	
+	<div class="viewport">
 		<!-- 头部 -->
 		<div class="top">
 			<a href="javascript:;" class="icon-lt lt"></a>
-			<span class="font">企业列表</span>
-			<a href="javascript:;" class="spot icon-menu" id="spot"></a>
+			<span class="font">我的</span>
 		</div>
-		<!-- 筛选列表单页面 -->
-		<div class="list" id="list">
-			<div class="list-wrap">
-				<div class="listitem">
-					<!-- 年限 -->
-					<div class="title">成立年限</div>
-					<div class="lists">
-						<a href="javascript:;" class="bordershow">不限</a>
-						<a href="javascript:;">1年内</a>
-						<a href="javascript:;">1到3年</a>
-						<a href="javascript:;">3到5年</a>
-						<a href="javascript:;">5到10年</a>
-						<a href="javascript:;">10年以上</a>
-					</div>
-				</div>
-				<div class="listitem">
-					<!-- 注册资本 -->
-					<div class="title">注册资本</div>
-					<div class="lists">
-						<a href="javascript:;" class="bordershow">不限</a>
-						<a href="javascript:;">100万以内</a>
-						<a href="javascript:;">100-200万</a>
-						<a href="javascript:;">200-500万</a>
-						<a href="javascript:;">500-1000万</a>
-						<a href="javascript:;">1000万以上</a>
-					</div>
-				</div>
-				<div class="listitem">
-					<!-- 登记状态 -->
-					<div class="title">登记状态</div>
-					<div class="lists">
-						<a href="javascript:;" class="bordershow">不限</a>
-						<a href="javascript:;">在业</a>
-						<a href="javascript:;">存续</a>
-						<a href="javascript:;">筹建</a>
-						<a href="javascript:;">清算</a>
-						<a href="javascript:;">迁入</a>
-						<a href="javascript:;">迁出</a>
-						<a href="javascript:;">停业</a>
-						<a href="javascript:;">撤销</a>
-						<a href="javascript:;">吊销</a>
-						<a href="javascript:;">注销</a>
-					</div>
-				</div>
-				<div class="listitem">
-					<div class="title">融资信息</div>
-					<div class="lists">
-						<a href="javascript:;" class="bordershow">不限</a>
-						<a href="javascript:;">有融资</a>
-						<a href="javascript:;">无融资</a>
-					</div>
-				</div>
-				<div class="listitem">
-					<div class="title">上市信息</div>
-					<div class="lists">
-						<a href="javascript:;" class="bordershow">不限</a>
-						<a href="javascript:;">已上市</a>
-						<a href="javascript:;">未上市</a>
-					</div>
-				</div>
-			</div>
-			<div class="listsearch">
-				<a href="javascript:;" class="listbtn">确定搜索</a>
+		<!-- 账户编辑 -->
+		<div class="edit">
+			<a href="javascript:;" class="headpic">
+				<img src="./images/my-headpic.jpg" alt="">
+			</a>
+			<div class="peoplemsg">
+				<p>昵称：A380机长</p>
+				<p>账号：13166316118</p>
+				<span class="integral">积分：21050</span>
 			</div>
 		</div>
-		<!-- 筛选 -->
-		<div class="screen">
-			<a href="javascript:;" class="country icon-up" id="up">全国</a>
-			<a href="javascript:;" class="business icon-down" id="down">所有行业</a>
-            <!-- 城市筛选 -->
-			<div class="citymenu cityflex" id="citymenu">
-				<ul>
-					<li class="cityshow">全国</li>
-					<li>北京</li>
-					<li>上海</li>
-					<li>广州</li>
-					<li>深圳</li>
-                    <!-- <li>上海</li>
-                    <li>广州</li>
-                    <li>深圳</li>
-                    <li>上海</li>
-                    <li>广州</li>
-                    <li>深圳</li> -->
-				</ul>
-				<dl>
-					<dt class="bordershow">全国</dt>
-                    <dd>北京</dd>
-                    <dd>北京</dd>
-					<dd>北京</dd>
-					<dt></dt>
-					<dt></dt>
-					<dt></dt>
-				</dl>
+		<!-- 认证 -->
+		<div class="approve publicpadding">
+			<i class=""></i>
+			<p>企业：上海砖石信息科技有限公司</p>
+			<a href="javascript:;"></a>
+		</div>
+		<!-- 个人操作栏、设置 -->
+		<div class="site">
+			<div class="sitemsg">
+				<i></i>
+				<p>分享赚分</p>
+				<a href="javascript:;"></a>
+			</div>
+			<div class="sitemsg">				
+				<i></i>
+				<p>关于我们</p>
+				<a href="javascript:;"></a>
+			</div>
+			<div class="sitemsg">				
+				<i></i>
+				<p>退出登录</p>
+				<a href="javascript:;"></a>
 			</div>
 		</div>
-		<!-- 数据统计 -->
-		<div class="number">
-			<p>当前共有 <span>12040904</span> 家企业入驻砖石征信</p>
+		<!-- 底部分类 -->
+		<div class="tab">
+			<a href="javascript:;" class="icon-home">
+				<span>首页</span>
+			</a>
+			<a href="../src/search.html" class="icon-search">
+				<span>搜索</span>
+			</a>
+			<a href="javascript:;" class="icon-heart">
+				<span>关注</span>
+			</a>
+			<a href="javascript:;" class="icon-people">
+				<span>我的</span>
+			</a>
 		</div>
-		<!-- 公司详情信息 -->
-		<div class="content">			
-				<div class="item">
-					<a href="javascript:;" class="co">
-						<img src="./images/chuizi.png" alt="">
-					</a>
-					<div class="meta">
-						<a href="javascript:;" class="logolink">锤子科技</a>
-						<p>法人代表：罗永浩</p>
-						<p>注册资本：2567.272万元</p>
-						<!-- <a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a> -->
-						<p>企业状态：<span class="active">存续</span></p>
-					</div>
-					<div class="score scoreshow">征信评分：96</div>
-					<span class="bgfont1"></span>
-				</div>			
-				<div class="item">
-					<a href="javascript:;" class="co">
-						<img src="./images/xiaomi.fw.png" alt="">
-					</a>
-					<div class="meta">
-						<a href="javascript:;" class="logolink">小米科技</a>
-						<p>法人代表：雷军</p>
-						<p>注册资本：185000万元</p>
-						<!-- <a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a> -->
-						<p>企业状态：<span class="active">存续</span></p>
-					</div>
-					<div class="score scoreshow">征信评分：75</div>
-					<span class="bgfont1"></span>
-				</div>			
-				<div class="item">
-					<a href="javascript:;" class="co">
-						<img src="./images/wanda.fw.png" alt="">
-					</a>
-					<div class="meta">
-						<a href="javascript:;" class="logolink">万达集团</a>
-						<p>法人代表：王健林</p>
-						<p>注册资本：100000万元</p>
-						<!-- <a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a> -->
-						<p>企业状态：<span class="cancellation">注销</span></p>
-					</div>
-					<div class="score scorehide">征信评分：0</div>
-					<span class="bgfont1"></span>
-				</div>			
-				<div class="item">
-					<a href="javascript:;" class="co">
-						<img src="./images/chuizi.png" alt="">
-					</a>
-					<div class="meta">
-						<a href="javascript:;" class="logolink">锤子科技</a>
-						<p>法人代表：罗永浩</p>
-						<p>注册资本：2567.272万元</p>
-						<!-- <a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a> -->
-						<p>企业状态：<span class="active">存续</span></p>
-					</div>
-					<div class="score scoreshow">征信评分：96</div>
-					<span class="bgfont1"></span>
-				</div>			
-				<div class="item">
-					<a href="javascript:;" class="co">
-						<img src="./images/xiaomi.fw.png" alt="">
-					</a>
-					<div class="meta">
-						<a href="javascript:;" class="logolink">小米科技</a>
-						<p>法人代表：雷军</p>
-						<p>注册资本：185000万元</p>
-						<!-- <a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a> -->
-						<p>企业状态：<span class="active">存续</span></p>
-					</div>
-					<div class="score scoreshow">征信评分：75</div>
-					<span class="bgfont1"></span>
-				</div>			
-				<div class="item">
-					<a href="javascript:;" class="co">
-						<img src="./images/wanda.fw.png" alt="">
-					</a>
-					<div class="meta">
-						<a href="javascript:;" class="logolink">万达集团</a>
-						<p>法人代表：王健林</p>
-						<p>注册资本：100000万元</p>
-						<!-- <a href="javascript:;" class="msglink">最新消息：锤子科技新发布了一款坚果Pro</a> -->
-						<p>企业状态：<span class="cancellation">注销</span></p>
-					</div>
-					<div class="score scorehide">征信评分：0</div>
-					<span class="bgfont1"></span>
-				</div>
-		</div>
-		<!-- 底部加载提示文字 -->
-		<div class="load">拼命加载中...</div>
+	</div>
 	</div>
 </body>
-<script src="./libs/jquery.min.js"></script>
-<script>
-
-	// $('#up').on('click',function(){
-
-	// 		$('#citymenu').css('displack':'block').addClass('current');
-	// })
-
-	// 		$('#citymenu'). toggleClass('current');
-
-	$('#up').on('click',function(){
-
-		$(this).toggleClass('current');
-
-		$('#citymenu').toggle();
-
-	})
-
-	$('#spot').on('click',function(){
-		$('#list').toggle();
-	})
-
-	// for(var i=0;i<$(''))
-
-</script>
 </html>

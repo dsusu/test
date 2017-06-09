@@ -1,0 +1,154 @@
+@import './normalize.less';
+
+@import './adapter.less';
+
+@import './font.less'; 
+
+@import './global.less';
+
+body {
+	background-color: #f5f5f5;
+}
+
+.viewport {
+	position: relative;
+	width: 100%;
+	max-width: 1080 / 54rem;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	// 公用padding样式
+	.publicpadding {
+		padding: 30 / 54rem;
+	}
+
+		// 头部
+	.top {
+		width: 1080 / 54rem;
+		// height: 135 / 54rem;
+		// line-height: 135 / 54rem;
+		text-align: center;
+		padding: 38 / 54rem;
+		background-color: #CD3A31;
+		box-sizing: border-box;
+
+		.lt {
+	    	float: left;
+			font-size: 56 / 54rem;
+			color: #fff;
+		}
+
+		.font {
+			display: inline-block;
+			font-size: 56 / 54rem;
+			color: #fff;
+			margin-left: -54 / 54rem;
+		}
+	}
+
+	// 账户编辑
+	.edit {
+		height: 265 / 54rem;
+		background-color: #fff;
+		padding: 40 / 54rem;
+		margin-bottom: 36 / 54rem;
+		box-sizing: border-box;
+
+		.headpic {
+			display: inline-block;
+			width: 182 / 54rem;
+			height: 182 / 54rem;
+			// background-color: pink;
+			float: left;
+			border-radius: 50%;
+			border: 2px solid #FFDBD7;
+			overflow: hidden;
+			box-sizing: border-box;
+
+			// img {
+			// 	background-size: contain;
+			// }
+		}
+
+		.peoplemsg {
+			margin-left: 224 / 54rem;
+			font-size: 42 / 54rem;
+
+			p {
+				margin-bottom: 26 / 54rem;
+				color: #878787;
+			}
+
+			.integral {
+				display: block;
+				color: #FF896D;
+			}
+		}
+	}
+	
+	// 认证
+	.approve {
+		background-color: #fff;
+		font-size: 42 / 54rem;
+		color: #2B83CD;
+		margin-bottom: 36 / 54rem;
+		// .approveicon {
+		// 	display: inline-block;
+		// 	width: 40 / 54rem;
+		// 	height: 40 / 54rem;
+		// 	background-color: url('../images/my-icon-approve.png') no-repeat;
+		// }
+
+		p {
+			margin-left: 76 / 54rem;
+		}
+	}
+
+	// 个人操作栏、设置
+	.site {
+		background-color: #fff;
+		font-size: 42 / 54rem;
+
+		.sitemsg {
+			padding: 36 / 54rem 34 / 54rem;
+
+
+
+
+			p {
+				color: #878787;
+				border-bottom: 1px solid #D9DBDF;
+				box-sizing: border-box;
+
+				&:last-child {
+				border: none;
+			}
+			}
+		}
+	}
+
+	 // 底部tab
+		.tab {
+			width: 880 / 54rem;
+			height: 127 / 54rem;
+			border-top: 1px solid #CD3A31;
+			position: fixed;
+			bottom: 0;
+			padding: 0 100 / 54rem 0 100 / 54rem;
+			display: flex;
+			justify-content: space-between;
+			background-color: #fff;
+
+			a {
+				// flex:1;
+				padding-top: 20 / 54rem;
+				color: #A9A9A9;
+				span {
+					font-size: 28 / 54rem;
+					display: block;
+					margin-top: 4 / 54rem;
+				}
+			}
+
+		}
+}
